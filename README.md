@@ -3,7 +3,15 @@ kityformula
 
 WEB mathematical formulas projects
 
-子项目：
+# 子项目：
+```
+editor KityFormula Editor 基于 SVG 的公式编辑器
+parser Kity Formula Parser
+render Kity Formula Render（KFR） 是一个基于SVG的公式渲染引擎，用以降低在web上呈现数学公式的复杂度。KFR是一个纯浏览器端解决方案，以**完全脱离服务器**的方式渲染公式，最终产生的公式可以是栅格化的图片，也可以是矢量化的图形。
+```
+
+# submodule:
+```
 添加
 为当前工程添加submodule，命令如下：
 
@@ -20,3 +28,4 @@ submodule的删除稍微麻烦点：首先，要在“.gitmodules”文件中删
 当使用git clone下来的工程中带有submodule时，初始的时候，submodule的内容并不会自动下载下来的，此时，只需执行如下命令：
 
 git submodule update --init --recursive
+```
